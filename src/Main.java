@@ -4,51 +4,52 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /* ćw.3 */
 
-        /* ćw.2 */
-
-        /*   zad.1 zadeklaruj i zainicjalizuj zmienne różnych typów i wyświetl w konsoli (im więcej tym lepiej ;) ) */
-        int zmienna1;
-        zmienna1= 10;
-        int zmienna2 = 30;
-        int a=10;
-        int b=5;
-        int c=6;
-        short a1 = 10;
-        byte b1 = 8;
-        long c1 = 50L;
-        float d1 = 1.2F;
+        /*  zad.1 napisać interfejs który bedzie słuzył do wpisania danych osobowych:
+         *   a) Imię, nazwisko, wiek, nr indeksu,
+         *   dane mają być wprowadzane z klawiatury w konsoli
+         *   b) wyświetlić dane za pomocą println i printf
+         */
 
 
-        int wynik = a + b + c;
-        System.out.println("Nasze liczby:" + a + " ," + a1 +" ," + b1 +" ," + c1 +" ," + d1 +"\n");
-
-        /*
-         *    zad.2 Napisz kod który będzie wykonywał operacje: dodawania, odejmowania,
-         *    mnożenia, dziealenia i modulo na zmiennych:
-         *    a) liczbaA i liczbaB, dowolne liczby calkowite (int),
-         *    b) liczbaX i liczbaY, dowolne liczby zmiennoprzecinkowe (double)
-         *  */
-        int odejmowanie= a-b;
-        double x=3.03;
-        double y=4.03;
-        double odejmowanie1= x-y;
-
-        System.out.println("Operacje na liczbach a i b");
-        System.out.println("Wynik dodawania to" + " " + a+b);
-        System.out.println("Wynik odejmowania to" + " " + odejmowanie);
-        System.out.println("Wynik mnożenia to" + " " + a*b);
-        System.out.println("Wynik dzielenia to" + " "+ a/b);
-        System.out.println("Wynik modulo to" + " " + a%b + "\n");
-
-        System.out.println("Operacje na liczbach x i y");
-        System.out.println("Wynik dodawania to" + " " + x+y);
-        System.out.println("Wynik odejmowania to" + " " + odejmowanie1);
-        System.out.println("Wynik mnożenia to" + " " + x*y);
-        System.out.println("Wynik dzielenia to" + " "+ x/y);
-        System.out.println("Wynik modulo to" + " " + x%y);
+        /*  zad.2 zadeklarować 2 zmienne typu int i wykonać na nich obliczenia arytmetyczn (+, -, *, /, %)
+         *   wynik wyświetlić w konsoli programu
+         */
 
 
+        //zad1
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Podaj Imię: ");
+        String imie = scan.next();
+
+        System.out.print("Podaj nazwisko: ");
+        String nazwisko = scan.next();
+
+        System.out.print("Podaj wiek: ");
+        int wiek = scan.nextInt();
+
+        System.out.print("Podaj numer indeksu: ");
+        int nr_indeksu = scan.nextInt();
+
+        System.out.println(" Imię:" + imie + " Nazwisko: " + nazwisko + " Wiek: " + wiek + " Nr indeksu: " + nr_indeksu +"");
+        System.out.printf("Imię: %s Nazwisko: %s Wiek: %d Nr indeksu %d \n", imie, nazwisko, wiek, nr_indeksu);
+
+
+
+        //zad2
+        int zmienna1 = 10;
+        int zmienna2 = 5;
+
+        int dodawanie = zmienna1 + zmienna2;
+        int odejmowanie = zmienna1 - zmienna2;
+        int mnozenie = zmienna1 * zmienna2;
+        int dzielenie = zmienna1 / zmienna2;
+        int modulo = zmienna1 % zmienna2;
+
+        System.out.println("\n wynik dodawania: " + dodawanie+ "\n wynik odejmowania: " + odejmowanie + "\n wynik mnożenia: " + mnozenie + "\n wynik dzielenia: " + dzielenie + "\n wynik modulo: " + modulo);
 
 
 
