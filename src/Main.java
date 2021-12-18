@@ -1,15 +1,50 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        /* ćw.1 */
-        System.out.println("Witam");
-        System.out.println("Pana lub Panią.");
-        System.out.printf("Jest %s mój %d program.\n", "to", 1 );
+        /* ćw.4 */
 
-        System.out.print("Mam nadzieję, że wszystko działa");
-        System.out.print(" pozdrawiam");
-        System.out.print(" serdecznie.");
+        /* zad.1 proszę dodać kilka złożonych operacji uzywając kilku operatorów arytmetycznych i logicznych */
+
+        int x = 5;
+        int y = 8;
+        int z = 3;
+        int q = x + y + z;
+        System.out.println( "Wynik działania x - y + z :" + q );
+        q = x - y + z;
+
+        System.out.println( "Wynik działania x / y * z :" + q );
+        q= x / y * z;
+
+        System.out.println( "Wynik działania x * y + z :" + q );
+        q= x * y + z;
+
+        System.out.println( "Wynik działania x % y + z :" + q );
+        q = x % y + z;
+
+
+
+        boolean a = true;
+        boolean b = false;
+        System.out.println("x && y = " + (a&&b));
+        System.out.println("x || y = " + (a||b) );
+        System.out.println("!(x && y) = " + !(a && b));
+        System.out.println("((x && y) || (!x || y) : " + ((a && b) || (!a || b)));
+        System.out.println("!((x || y) || (x || !y) : " + !((a && b) || (!a || b)));
+        System.out.println("!((x && y) || (!x || y) : " + !((a && b) || (!a || b)));
+        System.out.println("((x && y) %% (x || y) : " + ((a && b) && (a || b)));
+
+
+
+
+
+
+
+
+
+
 
     }
 }
